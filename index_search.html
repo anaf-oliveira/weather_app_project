@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=, initial-scale=1.0" />
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <title>What's the weather today?</title>
+  <script src="https://kit.fontawesome.com/9fe35a0b01.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <link rel="stylesheet" href="src/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Dosis:wght@300&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="card text-center" id="card1">
+      <div class="card-header">
+        <h3 class="today">26th july 2020</h3>
+      </div>
+      <div class="card-body">
+        <form id="search-form">
+          <div class="form-group">
+            <label for="inputAddress2"></label>
+            <input type="text" class="form-control" id="city-search" placeholder="Enter city name." />
+          </div>
+          <p></p>
+          <a href="#" class="btn btn-primary" id="search-btn">Search</a>
+          <a href="#" class="btn btn-primary" id="current-btn">Current</a>
+        </form>
+        <p></p>
+        <h1 class="city" id="city-value" style="margin: 0;">Vila Nova de Gaia</h1>
+        <p class="country">The weather in</p>
+        <div class="btn-group" role="group" aria-label="Basic example" style="width:100%">
+          <button type="button" class="btn btn-secondary">Monday</button>
+          <button type="button" class="btn btn-secondary">Tuesday</button>
+          <button type="button" class="btn btn-secondary">Wednesday</button>
+          <button type="button" class="btn btn-secondary">Thursday</button>
+          <button type="button" class="btn btn-secondary">Friday</button>
+        </div>
+        <br />
+        <div class="row" id="row">
+          <div class="col">
+            <h3 id="temperature">18ºC</h3>
+          </div>
+          <div class="col"><img src="src/media/janela.png" alt="window" id="window"></div>
+          <div class="w-100"></div>
+          <div class="col" id="temperature-description">
+            <a href="#" id="buttonCelsius">ºC</a> | <a href="#" id="buttonFahren">ºF</a>
+            <p id="description"><strong>RAINY </strong></p>
+          </div>
+          <div class="col" id="specifics"><span class="specifics-values" id="other-stats"> OTHER STATS </span>
+            <br />Humidity -<span class="specifics-values" id="humidity"> 71%</span>
+            <br />Wind -<span class="specifics-values" id="wind"> 13km/h</span></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <script src="src/index.js"></script>
+</body>
+
+</html>
